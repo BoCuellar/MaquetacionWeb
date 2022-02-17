@@ -1,0 +1,10 @@
+/* CSS MODULAR */
+
+@import "./css/normalize.css";
+@import "./css/reset.css";
+
+@import "./css/color.css";
+@import "./css/tipografia.css";
+@import "./css/grid.css";
+@import "./css/layout.css";
+@import "./css/mediaquery.css";
