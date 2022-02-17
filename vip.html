@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zona Vip</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- Header -->
+    <header>
+      <!-- Menu movil -->
+      <nav class="menuMovil">
+        <label for="click">
+          <img src="./img/menu.svg" alt="menu" />
+        </label>
+        <input id="click" type="checkbox" />
+        <!-- Menu oculto movil -->
+        <section class="menuOculto">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="quienessomos.html">¿Quienes somos?</a>
+            </li>
+            <li>
+              <a href="iniciarsesion.html">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="registro.html">Registro</a>
+            </li>
+          </ul>
+        </section>
+        <!-- menu Escritorio -->
+        <section class="menuEscritorio">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="servicios.html">Servicios</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="quienessomos.html">¿Quienes somos?</a>
+            </li>
+            <li>
+              <a href="iniciarsesion.html">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="registro.html">Registro</a>
+            </li>
+          </ul>
+        </section>
+        <div class="relleno"></div>
+        <a href="index.html"><img src="./img/logo.svg" alt="logo" /></a>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <h2>Zona vip</h2>
+      <picture>
+        <!-- smartphone -->
+        <source
+          srcset="
+            img/movil/imgVip.webp    1x,
+            img/movil/imgVip@2x.webp 2x,
+            img/movil/imgVip@3x.webp 3x
+          "
+          media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+        />
+        <!-- ipad -->
+        <source
+          srcset="
+            img/tablet/imgVip.webp    1x,
+            img/tablet/imgVip@2x.webp 2x
+          "
+          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+        />
+
+        <!-- escritorio -->
+        <source
+          srcset="
+            img/desktop/imgVip.webp     1x,
+            img/desktop/imgVip@2x.webp  2x
+          "
+          media="(min-width:1200px)"
+        /> 
+
+        <!-- Etiqueta img -->
+        <img src="" alt="banner" />
+      </picture>
+    </main>
+  </body>
+</html>
