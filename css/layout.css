@@ -1,4 +1,124 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
-
+* {
+    font-family: roboto;
+  }
+  
+  h2 {
+    color: var(--azulClaro);
+    text-align: center;
+  }
+  
+  /* header */
+  /* movil */
+  
+  .menuMovil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 3.1875rem;
+    background-color: var(--rojo);
+  }
+  
+  .relleno {
+    flex-grow: 1;
+  }
+  
+  nav > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuOculto {
+    display: none;
+    background-color: var(--blanco);
+    position: absolute;
+    top: 3.1875rem;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 51px);
+    justify-content: center;
+  }
+  
+  .menuOculto ul {
+    padding: 0 30px;
+  }
+  
+  .menuOculto ul li a {
+    color: var(--rojo);
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  #click {
+    display: none;
+  }
+  
+  #click:checked ~ .menuOculto {
+    display: flex;
+  }
+  
+  /* escritorio */
+  .menuEscritorio {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menuEscritorio ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuEscritorio ul li {
+    padding: 5px 15px;
+  }
+  
+  .menuEscritorio ul li a {
+      color: var(--blanco);
+  }
+  
+  /* main */
+  
+  main > picture > img {
+    width: 100vw;
+  }
+  
+  /* formularios */
+  
+  form {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .botonFormulario {
+    color: var(--negro);
+    background-color: var(--rojo);
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    height: 48px;
+  }
+  
+  form * {
+    margin: 5px;
+  }
+  
+  form input {
+    padding: 10px 0;
+    font-size: 20px;
+    height: 48px;
+    margin: 10px;
+  }
+  
