@@ -8,6 +8,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
-</html>
+  <!-- Header -->
+  <header>
+    <!-- Menu movil -->
+    <nav class="menuMovil">
+      <label for="click">
+        <img src="./img/menu.svg" alt="menu" />
+      </label>
+      <input id="click" type="checkbox" />
+      <!-- Menu oculto movil -->
+      <section class="menuOculto">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="quienessomos.html">¿Quienes somos?</a>
+          </li>
+          <li>
+            <a href="iniciarsesion.html">Iniciar Sesión</a>
+          </li>
+          <li>
+            <a href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </section>
+      <!-- menu Escritorio -->
+      <section class="menuEscritorio">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="quienessomos.html">¿Quienes somos?</a>
+          </li>
+          <li>
+            <a href="iniciarsesion.html">Iniciar Sesión</a>
+          </li>
+          <li>
+            <a href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </section>
+      <div class="relleno"></div>
+      <a href="index.html"><img src="./img/logo.svg" alt="logo" /></a>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <picture>
+      <!-- smartphone -->
+      <source
+        srcset="
+          img/movil/imgInicio.webp    1x,
+          img/movil/imgInicio@2x.webp 2x,
+          img/movil/imgInicio@3x.webp 3x
+        "
+        media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+      />
+      <!-- ipad -->
+      <source
+        srcset="
+          img/tablet/imgInicio.webp   1x,
+          img/tablet/imgInicio@2x.webp 2x
+        "
+        media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+      />
+      
