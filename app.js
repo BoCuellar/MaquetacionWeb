@@ -33,7 +33,7 @@ submitButon.addEventListener('click', function (e) {
    
 // comporbamos todos los elementos y devolvemos true si esta ok y false si no
     let requiredValid= validarRequerido();  
-    let soloTextoValid=validarSoloTexto();
+    let soloTextoValid= validarSoloTexto();
     let usaurioValid= comprobarUsuario(valueUsuario);
     let paswordValid= comprobarPassword(valuePassword);
     let equalsValid= validarEquals();
