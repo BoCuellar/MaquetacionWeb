@@ -70,10 +70,35 @@
     <!-- Main -->
     <main>
       <form action="" class="formulario" id="formulario ">
-        <input type="email" placeholder="Email:">
-        <input type="password" placeholder="Contraseña:">
-        <button class="botonFormulario">ENTRAR</button>
+
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+
+       <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
         <a href="registro.html">Pulsa en el link para registrarse</a>
+      
       </form>
     </main>
   </body>
