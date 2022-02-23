@@ -2,8 +2,8 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	nombre: /^[a-zA-ZÀ-ÿ\s]{2,10}$/, // Letras y espacios, pueden llevar acentos.
+	apellido: /^[a-zA-ZÀ-ÿ\s]{2,10}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	
@@ -87,7 +87,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.nombre && campos.password && campos.correo && terminos.checked ){
+	if(campos.nombre && campos.apellido && campos.password && campos.correo && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
