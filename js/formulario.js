@@ -25,6 +25,9 @@ const validarFormulario = (e) => {
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
+		case "apellido":
+			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();
@@ -35,10 +38,6 @@ const validarFormulario = (e) => {
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
 		break;
-		case "apellido":
-			validarCampo(expresiones.apellido, e.target, 'apellido');
-		break;
-	}
 }
 
 const validarCampo = (expresion, input, campo) => {
