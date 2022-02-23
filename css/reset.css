@@ -9,7 +9,7 @@
 /* Eliminar el subrayado de los links <a> y el color */
 a{
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 
 /* Elimina las viñetas de las listas <ul> */
