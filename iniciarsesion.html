@@ -71,15 +71,6 @@
     <main>
       <form action="" class="formulario" id="formulario ">
 
-        <div class="formulario__grupo" id="grupo__correo">
-          <label for="correo" class="formulario__label"></label>
-          <div class="formulario__grupo-input">
-            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
-            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-          </div>
-          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-        </div>
-
        <!-- Grupo: Correo Electronico -->
 			<div class="formulario__grupo" id="grupo__correo">
 				<div class="formulario__grupo-input">
@@ -87,6 +78,15 @@
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Solo letras,numeros,puntos,guiones,guion bajo.</p>
+			</div>
+
+      <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
 			</div>
 
          
