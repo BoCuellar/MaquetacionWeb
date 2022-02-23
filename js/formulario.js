@@ -11,7 +11,7 @@ const expresiones = {
 
 const campos = {
 	nombre: false,
-	apellido: false
+	apellido: false,
 	password: false,
 	correo: false,
 	
@@ -87,7 +87,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	if(campos.nombre && campos.password && campos.correo && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
