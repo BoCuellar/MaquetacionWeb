@@ -126,7 +126,7 @@
     font-size: 12px;
     margin-bottom: 0;
     display: none;
-    color: red;
+    color: var(--rojo);
   }
   
   .formulario__input-error-activo {
