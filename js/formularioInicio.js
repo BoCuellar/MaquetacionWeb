@@ -11,7 +11,7 @@ const expresiones = {
 const campos = {
 	
 	password: false,
-	correo: false,
+	correo: false
 	
 }
 
