@@ -17,16 +17,13 @@ const campos = {
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-		
-
-		
-		case "password":
-			validarCampo(expresiones.password, e.target, 'password');
-			validarPassword2();
-		break;
 
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
+		break;
+		case "password":
+			validarCampo(expresiones.password, e.target, 'password');
+			validarPassword2();
 		break;
 	
 		
