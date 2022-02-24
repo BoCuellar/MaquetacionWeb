@@ -175,7 +175,7 @@
     align-items: center;
   }
   
-  .formularioBoton {
+  .formulario__btn{
     color: var(--negro);
     background-color: var(--rojo);
     padding: 10px;
