@@ -8,7 +8,6 @@
 
 /* Eliminar el subrayado de los links <a> y el color */
 a{
-    text-decoration: none;
     color: blue;
 }
 
