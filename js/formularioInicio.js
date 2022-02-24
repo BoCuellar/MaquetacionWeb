@@ -9,7 +9,8 @@ const expresiones = {
 }
 
 const campos = {
-    correo: false,
+   
+	correo: false,
 	password: false,
 	
 	
