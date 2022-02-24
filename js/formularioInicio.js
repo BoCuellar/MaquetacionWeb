@@ -2,32 +2,39 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-
+	nombre: /^[a-zA-ZÀ-ÿ\s]{2,10}$/, // Letras y espacios, pueden llevar acentos.
+	apellido: /^[a-zA-ZÀ-ÿ\s]{2,10}$/, // Letras y espacios, pueden llevar acentos.
+	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password: /^.{4,12}$/, // 4 a 12 digitos.
 	
 }
 
 const campos = {
-   
-	correo: false,
+	nombre: false,
+	apellido: false,
 	password: false,
-	
+	correo: false,
 	
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-		
-        case "correo":
-			validarCampo(expresiones.correo, e.target, 'correo');
+		case "nombre":
+			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
+		case "apellido":
+			validarCampo(expresiones.apellido, e.target, 'apellido');
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();
 		break;
-	
-		
+		case "password2":
+			validarPassword2();
+		break;
+		case "correo":
+			validarCampo(expresiones.correo, e.target, 'correo');
+		break;
 		
 	}
 }
@@ -80,7 +87,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.correo && campos.password && terminos.checked ){
+	if(campos.nombre && campos.apellido && campos.password && campos.correo && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
