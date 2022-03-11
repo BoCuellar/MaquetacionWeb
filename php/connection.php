@@ -2,7 +2,7 @@
     // Class que conecta con la base de datos
     class SQLConnection extends PDO{
         private $host = "localhost"; // host para el localhost
-        private $dbname = "datosUsuario"; // Nombre de BDD
+        private $dbname = "maquetacion"; // Nombre de BDD
         private $user = "root"; // Nombre de usuario de BDD
         private $pass = ""; // Contraseña de BDD
 
