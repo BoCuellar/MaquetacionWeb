@@ -33,7 +33,7 @@
     foreach($results as $result){
         $input_nombre = "<input type='text' id='nombre' name='nombre' placeholder='Nombre' value='".$result['nombre']."'";
         $input_apellido = "<input type='text' id='apellido' name='apellido' placeholder='Apellido' value='".$result['apellido']."'";
-        $input_correo = "<input type='email' id='correo' name='correo' placeholder='Correo' value='".$result['correo']."'";
+        $input_correo = "<input type='text' id='correo' name='correo' placeholder='Correo' value='".$result['correo']."'";
         $input_contraseña = "<input type='text' id='contraseña' name='contraseña' placeholder='Contraseña' value='".$result['contraseña']."'";
     }
     // Cerrar la conexión con la base de datos
@@ -44,12 +44,12 @@
 <head>
     <meta charset="utf-8">
     <title>Perfil de Usuario</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body class="bg-grey">
+<body>
     
-    <section class="bg-light-blue text-white menu px-2">
-        <h1>BIENVENIDO A LOS DATOS DE TU USUARIO</h1>
+    <section>
+        <h3>BIENVENIDO A LOS DATOS DE TU USUARIO</h3>
         <h3> Tus datos: </h3>
         <table>
             <tr>
@@ -67,7 +67,7 @@
                 ?>
             </tr>
         </table>
-
+        
         <h3> Modifica tus datos en este formulario: </h3>
         <form action='actualizarUsuario.php' method='post'>
             <table>
@@ -81,8 +81,8 @@
                     <?php 
                         echo "<td> $input_nombre" . "></td>";
                         echo "<td> $input_apellido" . "></td>";
-                        echo "<td> $input_correo required" . "></td>"; // Con required, no podemos guardar correos vacíos
-                        echo "<td> $input_contraseña required" . "></td>"; // Con required, no podemos guardar contraseñas vacías
+                        echo "<td> $input_correo" . "></td>"; // Con required, no podemos guardar correos vacíos
+                        echo "<td> $input_contraseña" . "></td>"; // Con required, no podemos guardar contraseñas vacías
                     ?>
                 </tr>
             </table>
@@ -91,7 +91,7 @@
                 <button type="button" onclick="location.href='inicioSesion.php';">Cerrar sesión</button>
             </div>
         </form> 
-    </section>
+</section>
 </body>
 </html>
 
