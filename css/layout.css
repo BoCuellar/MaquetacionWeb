@@ -2,323 +2,239 @@
 /* **************************************************************** */
 
 * {
-    font-family: roboto;
-  }
-  
-  h2 {
-    color: var(--azulClaro);
-    text-align: center;
-  }
-  
-  /* header */
-  /* movil */
-  
-  .menuMovil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 3.1875rem;
-    background-color: var(--rojo);
-  }
-  
-  .relleno {
-    flex-grow: 1;
-  }
-  
-  nav > label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menuOculto {
-    display: none;
-    background-color: var(--blanco);
-    position: absolute;
-    top: 3.1875rem;
-    left: 0px;
-    width: 100vw;
-    height: calc(100vh - 51px);
-    justify-content: center;
-  }
-  
-  .menuOculto ul {
-    padding: 0 30px;
-  }
-  
-  .menuOculto ul li a {
-    color: var(--rojo);
-    padding: 10px 0;
-    text-align: center;
-    display: block;
-    font-size: 26px;
-    font-weight: bold;
-  }
-  
-  #click {
-    display: none;
-  }
-  
-  #click:checked ~ .menuOculto {
-    display: flex;
-  }
-  
-  /* escritorio */
-  .menuEscritorio {
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .menuEscritorio ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menuEscritorio ul li {
-    padding: 5px 15px;
-  }
-  
-  .menuEscritorio ul li a {
-      color: var(--blanco);
-  }
-  
-  /* main */
-  
-  main > picture > img {
-    width: 100vw;
-  }
-  
-  /* formularios */
-  
-  form {
-    background-color: var(--gris);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-  }
-  
-  .botonFormulario {
-    color: var(--negro);
-    background-color: var(--rojo);
-    padding: 10px;
-    border: none;
-    font-size: 20px;
-    height: 48px;
-  }
-  
-  form * {
-    margin: 5px;
-  }
-  
-  form input {
-    padding: 10px 0;
-    font-size: 20px;
-    height: 48px;
-    margin: 10px;
-  }
-  
-  .formulario__input-error {
-    font-size: 12px;
-    margin-bottom: 0;
-    display: none;
-    color: var(--rojo);
-  }
-  
-  .formulario__input-error-activo {
-    display: block;
-  }
-  
-  .formulario__validacion-estado {
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
-    z-index: 100;
-    font-size: 16px;
-    opacity: 0;
-  }
-  
-  .formulario__checkbox {
-    margin-right: 10px;
-  }
-  
-  .formulario__grupo-terminos, 
-  .formulario__mensaje,
-  .formulario__grupo-btn-enviar {
-    grid-column: span 2;
-  }
-  
-  .formulario__mensaje {
-    height: 45px;
-    line-height: 45px;
-    background: #F66060;
-    padding: 0 15px;
-    border-radius: 3px;
-    display: none;
-  }
-  
-  .formulario__mensaje-activo {
-    display: block;
-  }
-  
-  .formulario__mensaje p {
-    margin: 0;
-  }
-  
-  .formulario__grupo-btn-enviar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .formulario__btn{
-    color: var(--negro);
-    background-color: var(--rojo);
-    padding: 10px;
-    border: none;
-    font-size: 20px;
-    height: 48px;
-  }
-  
-  .formulario__btn:hover {
-    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-  }
-  
-  .formulario__mensaje-exito {
-    font-size: 14px;
-    color: #119200;
-    display: none;
-  }
-  
-  .formulario__mensaje-exito-activo {
-    display: block;
-  }
-  
-  /* ----- -----  Estilos para Validacion ----- ----- */
-  .formulario__grupo-correcto .formulario__validacion-estado {
-    color: #1ed12d;
-    opacity: 1;
-  }
-  
-  .formulario__grupo-incorrecto .formulario__label {
-    color: #bb2929;
-  }
-  
-  .formulario__grupo-incorrecto .formulario__validacion-estado {
-    color: #bb2929;
-    opacity: 1;
-  }
-  
-  .formulario__grupo-incorrecto .formulario__input {
-    border: 3px solid #bb2929;
-  }
+  font-family: roboto;
+}
 
-  /* Layout */
-.menu { /* Posición del menú */
+h2 {
+  color: var(--azulClaro);
+  text-align: center;
+}
+
+/* header */
+/* movil */
+
+.menuMovil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 3.1875rem;
+  background-color: var(--rojo);
+}
+
+.relleno {
+  flex-grow: 1;
+}
+
+nav > label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuOculto {
+  display: none;
+  background-color: var(--blanco);
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 500px;
+  top: 3.1875rem;
+  left: 0px;
+  width: 100vw;
+  height: calc(100vh - 51px);
+  justify-content: center;
 }
 
-.d-grid{ /* Alinear los items verticlamente */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-  grid-auto-rows: minmax(10px, auto);
+.menuOculto ul {
+  padding: 0 30px;
 }
 
-.table{ /* Especificar el color de la tabla y el width */
-  border: #000 solid 1px;
-  width: 100%;
-}
-
-.table th{ /* Especificar color y texto */
+.menuOculto ul li a {
+  color: var(--rojo);
+  padding: 10px 0;
   text-align: center;
-  background-color: #070707;
-  color: white;
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
 }
 
-.table tr:nth-child(even){ /* Cuando el row es par cmabia el color */
-  background-color: #4b1dcc;
+#click {
+  display: none;
 }
 
-.table tr:nth-child(odd){ /* Cuando el row es impar cmabia el color de fondo */
-  background-color: #1e84c9;
+#click:checked ~ .menuOculto {
+  display: flex;
 }
 
-/* Estilo de elementos */
-
-.bg-light-blue{
-  background-color: #00bcd4;
+/* escritorio */
+.menuEscritorio {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-grey{
-  background-color: #e0e0e0;
+.menuEscritorio ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.text-black{
-  color: #000;
+.menuEscritorio ul li {
+  padding: 5px 15px;
 }
 
-.text-white{
-  color: #fff;
+.menuEscritorio ul li a {
+    color: var(--blanco);
 }
 
-.text-center{
-  text-align: center;
+/* main */
+
+main > picture > img {
+  width: 100vw;
 }
 
-.text-justify{
-  text-align: justify;
+/* formularios */
+
+form {
+  background-color: var(--gris);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }
 
-.btn{
-  border-radius: 0;
+.botonFormulario {
+  color: var(--negro);
+  background-color: var(--rojo);
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  height: 48px;
 }
 
-/*Padding*/
-
-.px-1{
-  padding-left: 0.5rem!important;
-  padding-right: 0.5rem!important;
+form * {
+  margin: 5px;
 }
 
-.px-2{
-  padding-left: 1rem!important;
-  padding-right: 1rem!important;
+form input {
+  padding: 10px 0;
+  font-size: 20px;
+  height: 48px;
+  margin: 10px;
 }
 
-.px-3{
-  padding: 1.5rem!important;
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+  color: var(--rojo);
 }
 
-.py-1{
-  padding-top: 0.5rem!important;
-  padding-bottom: 0.5rem!important;
+.formulario__input-error-activo {
+  display: block;
 }
 
-.py-2{
-  padding-top: 1rem!important;
-  padding-bottom: 1rem!important;
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
 }
 
-.py-3{
-  padding-top: 1.5rem!important;
-  padding-bottom: 1.5rem!important;
+.formulario__checkbox {
+  margin-right: 10px;
 }
 
-.pb-2{
-  padding-bottom: 1rem!important;
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+  grid-column: span 2;
 }
 
-h1{
-  padding-left: 23%;
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje p {
+  margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario__btn{
+  color: var(--negro);
+  background-color: var(--rojo);
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  height: 48px;
+}
+
+.formulario__btn:hover {
+  box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #bb2929;
+}
+
+
+.caja{ 
+    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #505153; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #bd3b37; }
+
+
+.BotonError{
+position: inherit;
 }
