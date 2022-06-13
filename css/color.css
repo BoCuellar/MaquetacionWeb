@@ -1,11 +1,10 @@
 /* CSS COLOR */
 /* **************************************************************** */
 :root {
-    --azulOscuro: #011a1a;
-    --azulClaro: #85b7c2;
-    --rojo: #b71b1b;
-    --negro: #000;
-    --blanco: #fff;
-    --gris: #9b9b9b;
-  }
-  
+  --azulOscuro: #011a1a;
+  --azulClaro: #85b7c2;
+  --rojo: #b71b1b;
+  --negro: #000;
+  --blanco: #fff;
+  --gris: #9b9b9b;
+}

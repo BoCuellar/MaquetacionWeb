@@ -6,7 +6,7 @@
 }
 
 h2 {
-  color: var(--azulClaro);
+  color: var(--azulOscuro);
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ h2 {
   align-items: center;
   width: 100vw;
   height: 3.1875rem;
-  background-color: var(--rojo);
+  background-color: var(--negro);
 }
 
 .relleno {
@@ -48,7 +48,7 @@ nav > label {
 }
 
 .menuOculto ul li a {
-  color: var(--rojo);
+  color: var(--negro);
   padding: 10px 0;
   text-align: center;
   display: block;
@@ -94,7 +94,7 @@ main > picture > img {
 /* formularios */
 
 form {
-  background-color: var(--gris);
+  background-color: var(--blanco);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +104,7 @@ form {
 
 .botonFormulario {
   color: var(--negro);
-  background-color: var(--rojo);
+  background-color: var(--blanco);
   padding: 10px;
   border: none;
   font-size: 20px;
@@ -126,7 +126,7 @@ form input {
   font-size: 12px;
   margin-bottom: 0;
   display: none;
-  color: var(--rojo);
+  color: var(--negro);
 }
 
 .formulario__input-error-activo {
@@ -176,8 +176,8 @@ form input {
 }
 
 .formulario__btn{
-  color: var(--negro);
-  background-color: var(--rojo);
+  color: var(--blanco);
+  background-color: var(--negro);
   padding: 10px;
   border: none;
   font-size: 20px;
@@ -185,7 +185,7 @@ form input {
 }
 
 .formulario__btn:hover {
-  box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  box-shadow: 3px 0px 30px rgb(16, 11, 11);
 }
 
 .formulario__mensaje-exito {

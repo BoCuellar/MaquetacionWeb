@@ -9,7 +9,6 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- Header -->
     <header>
       <!-- Menu movil -->
       <nav class="menuMovil">
@@ -74,17 +73,14 @@
         <!-- smartphone -->
         <source
           srcset="
-            img/movil/imgContacto.webp    1x,
-            img/movil/imgContacto@2x.webp 2x,
-            img/movil/imgContacto@3x.webp 3x
+          img\movil\contacto.webp
           "
           media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
         />
         <!-- ipad -->
         <source
           srcset="
-            img/tablet/imgContacto.webp    1x,
-            img/tablet/imgContacto@2x.webp 2x
+          img\tablet\contacto.webp
           "
           media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
         />
@@ -92,15 +88,65 @@
         <!-- escritorio -->
         <source
           srcset="
-            img/desktop/imgContacto.webp   1x,
-            img/desktop/imgContacto@2x.webp 2x
+          img\desktop\contacto.webp
           "
           media="(min-width:1200px)"
         /> 
 
         <!-- Etiqueta img -->
-        <img src="" alt="banner" />
+        <img src="img/contacto.webp" alt="banner" />
       </picture>
+
+      <form action="php/Contacto.php" method="post" id="formulario" class="formulario">
+        
+        
+      <!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre y apellidos">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Letras y espacios, pueden llevar acentos.</p>
+			</div>
+
+       <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="correo" id="correo" placeholder="Correo">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Solo letras,numeros,puntos,guiones,guion bajo.</p>
+			</div>
+
+      <!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="(+34) 000 000 000">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Nueve números del 0 al 9.</p>
+			</div>
+
+       <!-- Grupo: Mensaje -->
+			<div class="formulario__grupo" id="grupo__mensaje">
+				<div class="formulario__grupo-input">
+					<textarea type="text" class="formulario__input" name="mensaje" id="mensaje" rows="5" cols="30" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Todo tipo de texto.</p>
+			</div>
+         
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar Mensaje</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Mensaje enviado correctamente, esperamos contestarte pronto!</p>
+      </div>
+      </form>
     </main>
+
+    <!-- Contact form -->
   </body>
 </html>
